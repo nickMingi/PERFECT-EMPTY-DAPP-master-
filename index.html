@@ -1,0 +1,87 @@
+<!doctype>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/blockies.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/web3.js"></script>
+<script src="js/EmptyDappUtils.js"></script>
+<script src="js/AlphaLibrary.js"></script>
+<script src="js/miniDappInterface.js"></script>
+<script src="js/mainDapp.js"></script>
+</head>
+<body class="bgcol">
+
+
+	
+
+    <div id="topheader" class="bgcol">	
+	<div id="logocontainer"><img id="logo" src="img/logo.png"></div>
+        <div id="menucontainer">
+        <div id="menusubcontainer">
+        <div id="menu1" index="1" class="menuitem" style="border-bottom: solid 7px white;">HOME</div>
+        <div id="menu2" index="2" class="menuitem lastmenuitem">FAQ</div>
+        </div>
+        </div>
+        <div id="avatarcontainer">
+        <div id="username">Unknown</div>
+        <img id="avatarimage">
+        </div>
+    </div>
+
+    <div id="msg" class="display">
+       <div id="loading"></div>
+       <div id="msgcnt">Message</div>
+       <input id="msgclose"type="submit" class="mainbutton" value="Hide" onclick="$('#msg').hide()">
+       <div style="clear:both"></div>
+    </div>
+<div id="problem" class="display">
+        <div style="color: red; padding: 20px;">YOU HAVE SOME PROBLEMS &#9760; THIS IS A DECENTRALIZED APPLICATION BUILT UPON ETHEREUM. YOU NEED THE BLOCKCHAIN!</div>
+    </div>
+
+<div id="page">
+   
+    
+
+  
+    <div id="home" class="tab" style="display: block;">HOME PAGE
+    <div id="set" class="io"><button class="mainbutton" onclick="set()">SET STRING</button><input id="textinput" type="text"><div id="trans1" class="transcontainer" ><img class="trans" src="img/transacting.png"></div><div style="clear: both"></div></div>
+    <div id="get" class="io"><button class="mainbutton" onclick="get()">GET STRING</button><div id="textoutput">?</div><div id="trans2" class="transcontainer" ><img class="trans" src="img/transacting.png"></div><div style="clear: both"></div></div>
+    <br><br><br>
+    </div>
+    <div id="faq" class="tab">FAQ PAGE<br><br><a href="https://github.com/monkeyscage/PERFECT-EMPTY-DAPP/wiki" target="_blank">https://github.com/monkeyscage/PERFECT-EMPTY-DAPP/wiki</a></div>
+
+    <div id="my-coins" class='display'>	
+       <div style="padding: 20px;">
+          <div id="noWalletAlert" style="color: red; display: none;float: left;">No Wallet Connected</div>
+          <div style="float: left; width: 100%;">
+	      <div id="walletico" class="walleticon"></div>
+              <select id="wallets" name="wallets"></select>
+              <button id="refreshwallet" onclick='reloadWallet()'  title='REFRESH WALLET' class='inb2'>
+                 <img id="refreshwalletimage" src="img/reload2.png">
+              </button>
+              <div id="balance">Balance:</div>
+              <div style="clear: both;"></div>
+          </div>
+         
+       </div>
+       <div style="clear: both;"></div>
+    </div>
+
+ </div>  
+   
+    
+
+</div>
+
+<div id="footer" class="bgcol">	
+	<div class="author" onclick="window.open('https://github.com/monkeyscage')" style="float: left;">
+           <img alt="GITHUB" title="GITHUB Repository" class="authorlogo" src="img/gitter.png" style="">
+        </div>
+        <div id="footermessage">copyright PERFECT EMPTY DAPP testnet</div>
+        <div class="author">
+           <img alt="CEO/DEV maxxflyer" title="DEV maxxflyer" class="authorlogo" src="http://openbackery.io/lizard.jpeg" style="margin-left: -15px;">
+        </div>
+    </div>
+</body>
+</html>
